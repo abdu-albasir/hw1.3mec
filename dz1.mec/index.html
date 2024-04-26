@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .valid {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+
+    .invalid {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+    </style>
+</head>
+<body>
+
+    <label for="input">Введите email:</label><br>
+    <input type="text" id="input" oninput="validateInput()">
+    <br>
+    
+    <div id="emailValidation"></div>
+
+    <label for="input">Введите ссылку:</label><br>
+    <input type="text" id="input" oninput="validateInput()">
+    <br>
+    <div id="linkValidation"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
